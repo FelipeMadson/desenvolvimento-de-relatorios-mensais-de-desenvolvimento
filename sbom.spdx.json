@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Desenvolvimento De Relatorios Mensais De Desenvolvimento SBOM",
+  "documentNamespace": "https://github.com/FelipeMadson/desenvolvimento-de-relatorios-mensais-de-desenvolvimento/spdxdocs/desenvolvimento-de-relatorios-mensais-de-desenvolvimento-1.0.0-92271850-4184-473d-9aeb-d6ad1cb13121",
+  "creationInfo": {
+    "created": "2026-09-30T15:18:12.417Z",
+    "creators": [
+      "Person: Felipe Madison (@FelipeMadson)",
+      "Organization: Autonomous Portfolio Engine — Staff Engineering Grade",
+      "Tool: SecurityCiGenerator-1.0.0"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "name": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+      "SPDXID": "SPDXRef-Package-desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+      "versionInfo": "1.0.0",
+      "packageFileName": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento-1.0.0.tar.gz",
+      "packageSupplier": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "originator": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "downloadLocation": "git+https://github.com/FelipeMadson/desenvolvimento-de-relatorios-mensais-de-desenvolvimento.git@v1.0.0",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f92bb75de06dd90e0710067cf0b3618ecb5196a7d0e167ae372a955fd648b406"
+        }
+      ],
+      "homepage": "https://github.com/FelipeMadson/desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+      "concludedLicense": "MIT",
+      "declaredLicense": "MIT",
+      "copyrightText": "Copyright (c) 2026 Felipe Madison (@FelipeMadson)",
+      "description": "Enterprise-grade production release for Desenvolvimento De Relatorios Mensais De Desenvolvimento, engineered by Felipe Madison."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Package-desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

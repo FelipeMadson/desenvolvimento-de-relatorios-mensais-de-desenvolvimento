@@ -1,6 +1,6 @@
-# SDKs de Cliente Poliglota — Desenvolvimento de Relatórios Mensais de Desenvolvimento
+# SDKs de Cliente Poliglota — Desenvolvimento De Relatorios Mensais De Desenvolvimento
 
-SDKs oficiais desenvolvidos para integração de sistemas com o **Desenvolvimento de Relatórios Mensais de Desenvolvimento** (`desenvolvimento-de-relatorios-mensais-de-desenvolvimento`), projetados sob os mais altos padrões de engenharia de software corporativa por **Felipe Madison (@FelipeMadson)**.
+SDKs oficiais desenvolvidos para integração de sistemas com o **Desenvolvimento De Relatorios Mensais De Desenvolvimento** (`desenvolvimento-de-relatorios-mensais-de-desenvolvimento`), projetados sob os mais altos padrões de engenharia de software corporativa por **Felipe Madison (@FelipeMadson)**.
 
 ---
 
@@ -10,9 +10,9 @@ SDKs oficiais desenvolvidos para integração de sistemas com o **Desenvolviment
 O SDK foi projetado com **zero dependências externas de runtime**, utilizando as APIs nativas do Node.js 22 LTS / navegadores modernos.
 
 ```typescript
-import { DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient } from "./sdk/ts/client.ts";
+import { desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient } from "./sdk/ts/client.ts";
 
-const client = new DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient({
+const client = new desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient({
   baseUrl: "http://127.0.0.1:3000",
   authToken: "sec_token_enterprise_9918",
   tenantId: "acme-corp"
@@ -42,9 +42,9 @@ console.log("Registro verificado:", audit.verified);
 100% em conformidade com Python 3.10+, utilizando estritamente a biblioteca padrão (`urllib.request`), sem requerer `pip install requests`.
 
 ```python
-from sdk.python.client import DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient
+from sdk.python.client import desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient
 
-client = DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient(
+client = desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient(
     base_url="http://127.0.0.1:3000",
     auth_token="sec_token_enterprise_9918",
     tenant_id="acme-corp"

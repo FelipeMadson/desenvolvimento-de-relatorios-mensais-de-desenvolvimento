@@ -1,5 +1,5 @@
 """
-SDK Oficial Python para Desenvolvimento de Relatórios Mensais de Desenvolvimento (desenvolvimento-de-relatorios-mensais-de-desenvolvimento).
+SDK Oficial Python para Desenvolvimento De Relatorios Mensais De Desenvolvimento (desenvolvimento-de-relatorios-mensais-de-desenvolvimento).
 Desenvolvido com rigor de engenharia sênior por Felipe Madison (@FelipeMadson).
 Construído utilizando exclusivamente a biblioteca padrão do Python (zero dependências externas).
 """
@@ -13,25 +13,25 @@ import urllib.request
 from typing import Any, Dict, Optional, Union
 
 
-class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError(Exception):
+class desenvolvimentoderelatoriosmensaisdedesenvolvimentoError(Exception):
     """Exceção base do SDK."""
     def __init__(self, message: str, status_code: Optional[int] = None):
         super().__init__(message)
         self.status_code = status_code
 
 
-class AuthenticationError(DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError):
+class AuthenticationError(desenvolvimentoderelatoriosmensaisdedesenvolvimentoError):
     """Erro de credenciais inválidas ou token expirado."""
     pass
 
 
-class RateLimitError(DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError):
+class RateLimitError(desenvolvimentoderelatoriosmensaisdedesenvolvimentoError):
     """Erro de esgotamento de quota ou cota de requisições excedida."""
     pass
 
 
-class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient:
-    """Cliente oficial tipado para integração com Desenvolvimento de Relatórios Mensais de Desenvolvimento."""
+class desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient:
+    """Cliente oficial tipado para integração com Desenvolvimento De Relatorios Mensais De Desenvolvimento."""
 
     def __init__(
         self,
@@ -93,7 +93,7 @@ class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient:
                     backoff = min((2 ** attempt) + random.uniform(0.1, 0.5), 5.0)
                     time.sleep(backoff)
                     continue
-                raise DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError(f"HTTP {status}: {body}", status_code=status)
+                raise desenvolvimentoderelatoriosmensaisdedesenvolvimentoError(f"HTTP {status}: {body}", status_code=status)
 
             except (urllib.error.URLError, TimeoutError) as err:
                 last_error = err
@@ -102,7 +102,7 @@ class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient:
                     time.sleep(backoff)
                     continue
 
-        raise DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError(f"Falha de rede após {self.max_retries} tentativas: {last_error}")
+        raise desenvolvimentoderelatoriosmensaisdedesenvolvimentoError(f"Falha de rede após {self.max_retries} tentativas: {last_error}")
 
     def check_health(self) -> Dict[str, Any]:
         """Verifica a integridade operacional do serviço."""

@@ -1,5 +1,5 @@
 /**
- * SDK Oficial TypeScript / Node.js para Desenvolvimento de Relatórios Mensais de Desenvolvimento (desenvolvimento-de-relatorios-mensais-de-desenvolvimento).
+ * SDK Oficial TypeScript / Node.js para Desenvolvimento De Relatorios Mensais De Desenvolvimento (desenvolvimento-de-relatorios-mensais-de-desenvolvimento).
  * Desenvolvido com rigor sênior por Felipe Madison (@FelipeMadson).
  * Zero dependências externas de runtime.
  */
@@ -35,19 +35,19 @@ export interface HealthResponse {
   version: string;
 }
 
-export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError extends Error {
+export class desenvolvimentoderelatoriosmensaisdedesenvolvimentoError extends Error {
   public readonly status?: number;
   public readonly code?: string;
 
   constructor(message: string, status?: number, code?: string) {
     super(message);
-    this.name = "DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError";
+    this.name = "desenvolvimentoderelatoriosmensaisdedesenvolvimentoError";
     this.status = status;
     this.code = code;
   }
 }
 
-export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
+export class desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient {
   private readonly baseUrl: string;
   private readonly authToken?: string;
   private readonly tenantId: string;
@@ -99,7 +99,7 @@ export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
             await new Promise(res => setTimeout(res, delay));
             continue;
           }
-          throw new DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError(
+          throw new desenvolvimentoderelatoriosmensaisdedesenvolvimentoError(
             `HTTP ${response.status}: ${errBody || response.statusText}`,
             response.status
           );
@@ -114,7 +114,7 @@ export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
       } catch (err: any) {
         lastError = err;
         if (err.name === "AbortError") {
-          lastError = new DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError(`Requisição excedeu timeout de ${options.timeoutMs ?? this.timeoutMs}ms`, 408);
+          lastError = new desenvolvimentoderelatoriosmensaisdedesenvolvimentoError(`Requisição excedeu timeout de ${options.timeoutMs ?? this.timeoutMs}ms`, 408);
         }
         if (attempt < this.maxRetries) {
           const delay = Math.min(500 * Math.pow(2, attempt) + Math.random() * 200, 4000);
@@ -124,7 +124,7 @@ export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
       }
     }
 
-    throw lastError || new DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoError("Falha na requisição após múltiplas tentativas.");
+    throw lastError || new desenvolvimentoderelatoriosmensaisdedesenvolvimentoError("Falha na requisição após múltiplas tentativas.");
   }
 
   public async checkHealth(): Promise<HealthResponse> {
@@ -148,6 +148,6 @@ export class DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
   }
 }
 
-export function createClient(config: ClientConfig = {}): DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient {
-  return new DesenvolvimentodeRelatriosMensaisdeDesenvolvimentoClient(config);
+export function createClient(config: ClientConfig = {}): desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient {
+  return new desenvolvimentoderelatoriosmensaisdedesenvolvimentoClient(config);
 }
