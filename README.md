@@ -26,7 +26,7 @@
 
 ## 🎮 Live Interactive Playground (No Backend Required)
 
-Experimente o simulador em tempo real executando 100% no seu navegador com WebCrypto, Token Bucket e Write-Ahead Logging:
+Experimente o console SaaS corporativo com métricas multi-tenant, gráficos de vazão ao vivo e cálculo de percentis P99:
 👉 **[Acessar Live Playground do Desenvolvimento De Relatorios Mensais De Desenvolvimento](https://felipemadson.github.io/desenvolvimento-de-relatorios-mensais-de-desenvolvimento/)**
 
 ## 🖥️ Demonstração em Terminal Vetorial (Execução & Benchmarks)
