@@ -1,11 +1,12 @@
 {
-  "name": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+  "name": "@felipemadson/desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
   "version": "1.1.0",
   "description": "Desenvolvedores precisam gerenciar e compartilhar suas jornadas de desenvolvimento, mas atualmente não há uma ferramenta eficiente para isso.",
   "type": "module",
   "main": "src/index.ts",
   "bin": {
-    "desenvolvimento-de-relatorios-mensais-de-desenvolvimento": "src/cli/cli.ts"
+    "desenvolvimento-de-relatorios-mensais-de-desenvolvimento": "./bin/cli.js",
+    "@felipemadson/desenvolvimento-de-relatorios-mensais-de-desenvolvimento": "./bin/cli.js"
   },
   "scripts": {
     "start": "node --experimental-strip-types src/index.ts",
