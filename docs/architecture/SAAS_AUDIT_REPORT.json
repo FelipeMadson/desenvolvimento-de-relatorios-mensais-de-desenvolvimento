@@ -1,0 +1,15 @@
+{
+  "slug": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+  "auditedAt": "2026-09-30T15:05:02.154Z",
+  "score": 100,
+  "checks": {
+    "automatedTestsPassed": true,
+    "testCount": 18,
+    "readmePresent": true,
+    "ciPipelineConfigured": true,
+    "containerizationReady": false,
+    "architectureDocsPresent": true,
+    "authorAttribution": "Felipe Madison (@FelipeMadson)"
+  },
+  "readinessStatus": "PRODUCTION_READY"
+}
