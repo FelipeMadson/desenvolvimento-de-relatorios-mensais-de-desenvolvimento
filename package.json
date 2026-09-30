@@ -1,0 +1,31 @@
+{
+  "name": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
+  "version": "1.0.0",
+  "description": "Desenvolvedores precisam gerenciar e compartilhar suas jornadas de desenvolvimento, mas atualmente não há uma ferramenta eficiente para isso.",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "desenvolvimento-de-relatorios-mensais-de-desenvolvimento": "src/cli/cli.ts"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types src/index.ts",
+    "cli": "node --experimental-strip-types src/cli/cli.ts",
+    "test": "node --experimental-strip-types --test tests/**/*.test.ts",
+    "build": "tsc --noEmit"
+  },
+  "keywords": [
+    "enterprise",
+    "clean-architecture",
+    "local-first",
+    "typescript",
+    "tsi",
+    "zero-dependency",
+    "desenvolvimento-de-relatorios-mensais-de-desenvolvimento"
+  ],
+  "author": "Felipe Madison (@FelipeMadson)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
