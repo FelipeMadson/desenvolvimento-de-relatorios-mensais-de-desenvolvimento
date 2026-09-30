@@ -1,6 +1,6 @@
 {
   "name": "desenvolvimento-de-relatorios-mensais-de-desenvolvimento",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Desenvolvedores precisam gerenciar e compartilhar suas jornadas de desenvolvimento, mas atualmente não há uma ferramenta eficiente para isso.",
   "type": "module",
   "main": "src/index.ts",
